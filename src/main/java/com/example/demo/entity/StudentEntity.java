@@ -9,44 +9,64 @@ import jakarta.persistence.Id;
 public class StudentEntity {
 
     @Id
-    @GeneratedValue(strategy - generationType.IDENTITY)
-    praivate Long id;
-    praivate string name;
-    praivate string email;
-    praivate float cgpa;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+    private float cgpa;
+}
 
-    public StudentEntity(Long id, string name, string email, float cgpa){
+j ibrahim
+3:52 PM
+package com.example.demo.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class StudentEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private String email;
+    private float cgpa;
+
+    public StudentEntity(Long id, String name, String email, float cgpa) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.cgpa = cgpa;
     }
-    
-    public StudentEntity(){
 
+    public StudentEntity() {
+        
     }
-    public void setName(string name){
-        this.name;
-    }   
 
-    public string getname(string name){
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
         return this.name;
     }
 
-    public void setEmail(string email){
-         this.name;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void getEmail( string email){
+    public String getEmail() {
         return this.email;
     }
 
-    public void setcgpa(float cgpa){
-        this.cgpa;
+    public void setCgpa(float cgpa) {
+        this.cgpa = cgpa;
     }
 
-    public void getcgpa(float cgpa){
+    public float getCgpa() {
         return this.cgpa;
     }
-
 }
