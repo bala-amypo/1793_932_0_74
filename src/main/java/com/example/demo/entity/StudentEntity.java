@@ -19,7 +19,7 @@ public class StudentEntity {
         this.name
     }   
 
-    public string getname(){
+    public string getname(string name){
         return this.name;
     }
-}
+    public void getname
