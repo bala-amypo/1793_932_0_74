@@ -15,7 +15,12 @@ public class StudentEntity {
     praivate string email;
     praivate float cgpa;
 
-    
+    public StudentEntity(Long id, string name, string email, float cgpa){
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.cgpa = cgpa;
+    }
 
     public void setName(string name){
         this.name;
