@@ -15,8 +15,10 @@ public class StudentEntity {
     praivate string email;
     praivate float cgpa;
 
+    
+
     public void setName(string name){
-        this.name
+        this.name;
     }   
 
     public string getname(string name){
@@ -28,7 +30,15 @@ public class StudentEntity {
     }
 
     public void getEmail( string email){
-        return this.email
+        return this.email;
     }
 
-    
+    public void setcgpa(float cgpa){
+        this.cgpa;
+    }
+
+    public void getcgpa(float cgpa){
+        return this.cgpa;
+    }
+
+}
