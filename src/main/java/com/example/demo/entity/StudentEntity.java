@@ -17,5 +17,9 @@ public class StudentEntity {
 
     public void setName(string name){
         this.name
+    }   
+
+    public string getname(){
+        return this.name;
     }
 }
