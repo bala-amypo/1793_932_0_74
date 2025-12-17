@@ -22,4 +22,13 @@ public class StudentEntity {
     public string getname(string name){
         return this.name;
     }
-    public void getname
+
+    public void setEmail(string email){
+         this.name;
+    }
+
+    public void getEmail( string email){
+        return this.email
+    }
+
+    
