@@ -22,5 +22,7 @@ public class StudentController {
 
 
     @GetMapping("/getStudent")
-    public List<student
+    public List<StudentEntity>getStudent(){
+        return ser.getStudents();
+    }
 }
